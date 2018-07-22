@@ -134,14 +134,14 @@ def train(opt):
             gen_score = disc(seq.view(-1, seq.size(2)), feature_fc.view(-1, feature_fc.size(2)))
 
             if flag.flag == "Disc":
-                gt_prob = disc(target.view(-1, target.size(2)), feature_fc.view(-1, feature_fc.size(2)))
-                loss = -torch.sum(gt_prob) + torch.sum(gen_score)
+                gt_score = disc(target.view(-1, target.size(2)), feature_fc.view(-1, feature_fc.size(2)))
+                loss = -torch.sum(gt_score) + torch.sum(gen_score)
 
-                avg_pos_prob = torch.mean(gt_score)
-                avg_neg_prob = torch.mean(gen_score)
+                avg_pos_score = torch.mean(gt_score)
+                avg_neg_score = torch.mean(gen_score)
 
                 if logger.iteration % 5 == 0:
-                    logging.info("pos reward {} neg reward {}".format(avg_pos_prob.data[0], avg_neg_prob.data[0]))
+                    logging.info("pos reward {} neg reward {}".format(avg_pos_score.data[0], avg_neg_score.data[0]))
                     print("PREDICTION: ", utils.decode_story(dataset.get_vocab(), seq[:1].data)[0])
                     print("GROUND TRUTH: ", utils.decode_story(dataset.get_vocab(), target[:1].data)[0])
             else:
@@ -150,9 +150,9 @@ def train(opt):
                 #    print(" ".join(map(str, rewards.data.cpu().numpy())), file=f)
                 loss, avg_score = rl_crit(seq.data, seq_log_probs, baseline, index, rewards)
                 # if logger.iteration % opt.losses_log_every == 0:
-                avg_pos_prob = torch.mean(gen_score)
+                avg_pos_score = torch.mean(gen_score)
                 logging.info(
-                    "average reward: {} average IRL score: {}".format(avg_score.data[0], avg_pos_prob.data[0]))
+                    "average reward: {} average IRL score: {}".format(avg_score.data[0], avg_pos_score.data[0]))
 
             if flag.flag == "Disc":
                 loss.backward()
