@@ -4,6 +4,10 @@ In this paper, we not only introduce a novel adversarial reward learning algorit
 
 For more details, please check the latest version of the paper: [https://arxiv.org/abs/1804.09160](https://arxiv.org/abs/1804.09160).
 
+<p align="demo">
+<img src="demo.png" width="600">
+</p>
+
 ## Prerequisites 
 - Python 2.7
 - PyTorch 0.3
@@ -15,7 +19,7 @@ For more details, please check the latest version of the paper: [https://arxiv.o
 Clone this github repository recursively: 
 
 ```
-git clone --recursive https://github.com/littlekobe/Visual-Storytelling.git ./
+git clone --recursive https://github.com/eric-xw/AREL.git ./
 ```
 
 Download the preprocessed ResNet-152 features [here](http://nlp.cs.ucsb.edu/data/VIST_resnet_features.zip) and unzip it into `DATADIR/resnet_features`.
