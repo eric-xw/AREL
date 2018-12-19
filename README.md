@@ -5,7 +5,7 @@ In this paper, we not only introduce a novel adversarial reward learning algorit
 For more details, please check the latest version of the paper: [https://arxiv.org/abs/1804.09160](https://arxiv.org/abs/1804.09160).
 
 <p align="demo">
-<img src="demo.png" width="600">
+<img src="demo.png">
 </p>
 
 ## Prerequisites 
@@ -67,7 +67,7 @@ python train_AREL.py --option test --start_from_model data/save/AREL/model.pth
 
 ## If you find this code useful, please cite the paper
 ```
-@InProceedings{xinwang-wenhuchen-ACL-2018,
+@InProceedings{xwang-2018-AREL,
   author = 	"Wang, Xin and Chen, Wenhu and Wang, Yuan-Fang and Wang, William Yang",
   title = 	"No Metrics Are Perfect: Adversarial Reward Learning for Visual Storytelling",
   booktitle = 	"Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
@@ -80,4 +80,4 @@ python train_AREL.py --option test --start_from_model data/save/AREL/model.pth
 ```
 
 ## Acknowledgement
-* [VIST evaluation code by Licheng Yu](https://github.com/lichengunc/vist_eval)
+* [VIST evaluation code](https://github.com/lichengunc/vist_eval)
