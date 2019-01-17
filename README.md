@@ -57,13 +57,13 @@ And then open your browser and go to `[IP address]:6006` (the default port for t
 To test the model's performance, run
 
 ```
-python train.py --option test --start_from_model data/save/XE/model.pth
+python train.py --option test --beam_size 3 --start_from_model data/save/XE/model.pth
 ```
 
 or 
 
 ```
-python train_AREL.py --option test --start_from_model data/save/AREL/model.pth
+python train_AREL.py --option test --beam_size 3 --start_from_model data/save/AREL/model.pth
 ```
 
 ## If you find this code useful, please cite the paper
