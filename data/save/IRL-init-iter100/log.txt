@@ -1,0 +1,70 @@
+05-12 13:46 INFO     Option settings:
+05-12 13:46 INFO     grad_clip                               : 10
+05-12 13:46 INFO     conv_feat_size                          : 100352
+05-12 13:46 INFO     shuffle                                 : True
+05-12 13:46 INFO     scheduled_sampling_max_prob             : 0.25
+05-12 13:46 INFO     decoding_method_DISC                    : sample
+05-12 13:46 INFO     use_feature_with_context                : False
+05-12 13:46 INFO     scheduled_sampling_increase_every       : 5
+05-12 13:46 INFO     rl_weight                               : 0.5
+05-12 13:46 INFO     start_from_model                        : None
+05-12 13:46 INFO     use_conv                                : False
+05-12 13:46 INFO     scheduled_sampling_increase_prob        : 0.05
+05-12 13:46 INFO     visual_dropout                          : 0.2
+05-12 13:46 INFO     full_story_h5                           : VIST/full_story.h5
+05-12 13:46 INFO     num_layers                              : 1
+05-12 13:46 INFO     max_epochs                              : 100
+05-12 13:46 INFO     word_embed_dim                          : 512
+05-12 13:46 INFO     id                                      : IRL-init-iter100
+05-12 13:46 INFO     metric                                  : METEOR
+05-12 13:46 INFO     scheduled_sampling_start                : 0
+05-12 13:46 INFO     weight_decay                            : 0
+05-12 13:46 INFO     data_dir                                : ../VIST
+05-12 13:46 INFO     learning_rate_decay_every               : 5
+05-12 13:46 INFO     workers                                 : 8
+05-12 13:46 INFO     resume_from                             : data/save/IRL-init-iter100
+05-12 13:46 INFO     learning_rate                           : 0.0004
+05-12 13:46 INFO     reward_type                             : METEOR
+05-12 13:46 INFO     activation                              : Sigmoid
+05-12 13:46 INFO     G_iter                                  : 50
+05-12 13:46 INFO     load_best_score                         : True
+05-12 13:46 INFO     rnn_type                                : gru
+05-12 13:46 INFO     momentum                                : 0.9
+05-12 13:46 INFO     story_h5                                : VIST/story.h5
+05-12 13:46 INFO     option                                  : train
+05-12 13:46 INFO     optim                                   : Adam
+05-12 13:46 INFO     story_line_json                         : VIST/story_line.json
+05-12 13:46 INFO     batch_size                              : 64
+05-12 13:46 INFO     D_iter                                  : 50
+05-12 13:46 INFO     checkpoint_path                         : data/save
+05-12 13:46 INFO     start_rl                                : -1
+05-12 13:46 INFO     losses_log_every                        : 10
+05-12 13:46 INFO     learning_rate_decay_rate                : 0.5
+05-12 13:46 INFO     dropout                                 : 0.5
+05-12 13:46 INFO     story_size                              : 5
+05-12 13:46 INFO     task                                    : story_telling
+05-12 13:46 INFO     optim_beta                              : 0.999
+05-12 13:46 INFO     learning_rate_decay_start               : -1
+05-12 13:46 INFO     save_checkpoint_every                   : 400
+05-12 13:46 INFO     cached_tokens                           : VIST/VIST-train-words
+05-12 13:46 INFO     prefix                                  : fc/
+05-12 13:46 INFO     optim_alpha                             : 0.8
+05-12 13:46 INFO     beam_size                               : 3
+05-12 13:46 INFO     with_position                           : False
+05-12 13:46 INFO     desc_h5                                 : VIST/description.h5
+05-12 13:46 INFO     hidden_dim                              : 512
+05-12 13:46 INFO     always                                  : None
+05-12 13:46 INFO     debug                                   : False
+05-12 13:46 INFO     model                                   : BaseModel
+05-12 13:46 INFO     optim_epsilon                           : 1e-08
+05-12 13:46 INFO     feat_size                               : 2048
+05-12 13:46 INFO     Initialize the parameters of the model
+05-12 13:46 INFO     Load pretrained model
+05-12 13:46 INFO     Load optimizer from data/save/IRL-init-iter100/optimizer.pth
+05-12 13:46 INFO     Loaded learning rate is 5e-05
+05-12 13:46 INFO     Load optimizer from data/save/IRL-init-iter100/optimizer.pth
+05-12 13:46 INFO     Initialize optimizer
+05-12 13:46 INFO     Loaded learning rate is 5e-05
+05-12 13:46 INFO     pos reward 0.414420455694 neg reward 0.420476198196
+05-12 13:46 INFO     pos reward 0.426235824823 neg reward 0.415907204151
+05-12 13:46 INFO     Epoch 22 Train Disc - Iter 9 / 627, loss = -0.01033, time used = 38.183s
