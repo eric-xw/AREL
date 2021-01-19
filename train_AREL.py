@@ -145,7 +145,7 @@ def train(opt):
                     print("PREDICTION: ", utils.decode_story(dataset.get_vocab(), seq[:1].data)[0])
                     print("GROUND TRUTH: ", utils.decode_story(dataset.get_vocab(), target[:1].data)[0])
             else:
-                rewards = Variable(gen_score.data - 0.001 * normed_seq_log_probs.data)
+                rewards = Variable(gen_score.data - 0 * normed_seq_log_probs.data)
                 #with open("/tmp/reward.txt", "a") as f:
                 #    print(" ".join(map(str, rewards.data.cpu().numpy())), file=f)
                 loss, avg_score = rl_crit(seq.data, seq_log_probs, baseline, index, rewards)
