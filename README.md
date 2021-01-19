@@ -66,6 +66,13 @@ or
 python train_AREL.py --option test --beam_size 3 --start_from_model data/save/AREL/model.pth
 ```
 
+### Reproducing our results
+We uploaded our checkpoints and meta files to the [IRL-ini-iter100-*](https://github.com/eric-xw/AREL/tree/master/data/save). Please load the model from these folders by running
+
+```
+python train.py --option test --beam_size 3 --start_from_model [best_model_path]
+```
+
 ## If you find this code useful, please cite the paper
 ```
 @InProceedings{xwang-2018-AREL,
